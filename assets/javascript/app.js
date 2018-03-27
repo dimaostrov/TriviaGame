@@ -12,13 +12,13 @@ let game = {
 };
 
 $(document).ready(function() {
+    $("#question").html(`
+    <button id='start' class='btn btn-danger'>Start Trivia</button>`);
+    $("button").on("click", function() {
+      $(this).remove()
+    });
   
-    let redo = () => {
-    $("#clock").empty();
-    $("#game").empty();
-    $("#question").empty();
-    console.log('redo')
-  };
+    
 
   if (game.start) {
     game.getQuestions();
@@ -41,11 +41,5 @@ $(document).ready(function() {
       console.log($(this).attr("correct"));
     });
   } else {
-    $("#question").html(`
-    <button id='start' class='btn btn-danger'>Start Trivia</button>`);
-    $("button").on("click", function() {
-      console.log("hi");
-      game.start = true;
-    });
   }
 });
