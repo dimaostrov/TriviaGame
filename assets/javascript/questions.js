@@ -136,7 +136,7 @@ let questions = [
       ],
       funtip:
         "The Casualties even though they went to get super famous would still go and play smaller venues in the city."
-    },
+    }/* ,
     {
       question: "Who was the bassist of Sex Pistols",
       choices: [
@@ -458,6 +458,6 @@ let questions = [
       ],
       funtip:
         "Sid Vicious didn't know how to play the bass and died when he overdosed on Heroin"
-    }
+    } */
   ];
   
